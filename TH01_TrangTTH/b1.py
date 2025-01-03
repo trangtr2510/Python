@@ -16,4 +16,4 @@ if m > 0:
     print(f"Mỗi học sinh được nhận {candies_per_student} cái kẹo.")
     print(f"Cô còn lại {remaining_candies} cái kẹo.")
 else:
-    print("Số học sinh phải lớn hơn 0.")
+    print("Số học sinh phải lớn hơn 0.") 
