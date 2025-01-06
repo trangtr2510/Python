@@ -1,4 +1,4 @@
-# kiem tr so chan le
+# kiem tra gioi tinh
 print("VD 3 \n")
 n = int(input("Nhập vào giới tính (0=Nam|1=Nữ): "))
 
