@@ -8,12 +8,12 @@ matrix = np.random.randint(0, 101, size=(n, n))
 
 # In ma trận
 def analyze_matrix():
-    # Verify matrix properties
+    # Xác minh các thuộc tính của ma trận
     shape = matrix.shape
     total_elements = matrix.size
     dimensions = len(matrix.shape)
     
-    # Basic matrix information
+    # Thông tin cơ bản về ma trận
     print(matrix)
     print("Phân tích ma trận:")
     print(f"1. Kiểu dữ liệu: {matrix.dtype}")
@@ -21,7 +21,7 @@ def analyze_matrix():
     print(f"3. Tổng số phần tử: {total_elements}")
     print(f"4. Số chiều: {dimensions}")
     
-    # Verify constraints
+    # Xác minh các ràng buộc
     print("\nKiểm tra ràng buộc:")
     print(f"- Ma trận vuông cấp n×n: {'Đúng' if shape[0] == shape[1] else 'Sai'}")
     print(f"- n = 12: {'Đúng' if shape[0] == 12 else 'Sai'}")
@@ -30,11 +30,11 @@ def analyze_matrix():
     integers = np.all(matrix.astype(int) == matrix)
     print(f"- Các phần tử là số nguyên: {'Đúng' if integers else 'Sai'}")
 
-    # Additional analysis
+    # Phân tích bổ sung
     print("\nThống kê thêm:")
     print(f"- Giá trị lớn nhất: {np.max(matrix)}")
     print(f"- Giá trị nhỏ nhất: {np.min(matrix)}")
     print(f"- Giá trị trung bình: {np.mean(matrix):.2f}")
 
-# Run the analysis
+# Chạy ham 
 analyze_matrix()

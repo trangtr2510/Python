@@ -1,0 +1,4 @@
+HoTen,Toan,Van,Anh
+Nguyen Van A,8,7,9
+Le Thi B,6,8,7
+Tran Van C,9,10,8
