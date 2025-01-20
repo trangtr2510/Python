@@ -31,10 +31,11 @@ try:
             bmi_categories[category] += 1
             
     total = sum(bmi_categories.values())
+    print("-" * 40)
     print(f"Tổng số: {total}")
     print("-" * 40)
     for i, (category, count) in enumerate(bmi_categories.items(), 1):
-        print(f"{i}. {category:<15}: {count}")
+        print(f"{i}. {category:<20}: {count}")
 
 except FileNotFoundError:
     print("Error: File Data_BMI.txt not found")

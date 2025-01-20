@@ -41,7 +41,7 @@ def get_next_states(state):
     return next_states
 
 def solve_water_jug():
-    initial_state = State(0, 0, 0) # trạng thái ban đầu : cả 3 can không có nước 
+    initial_state = State(0, 0, 12) # trạng thái ban đầu : can 12 lít đầy nước 
     target = 1  # Trạng thái đích: Nước trong 1 can là 1 lít 
     
     queue = deque([(initial_state, [])])

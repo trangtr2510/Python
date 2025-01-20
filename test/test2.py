@@ -17,10 +17,9 @@ class State:
         self.y1 = 3 - y
 
     def is_valid(self):
-        """
-        Kiểm tra xem trạng thái có hợp lệ không.
-        :return: True nếu hợp lệ, ngược lại False.
-        """
+        # Kiểm tra xem trạng thái có hợp lệ không.
+        # return: True nếu hợp lệ, ngược lại False.
+        
         # Kiểm tra số lượng người hợp lệ
         if (self.x < 0 or self.x1 < 0 or
             self.y < 0 or self.y1 < 0):
@@ -70,12 +69,11 @@ def get_next_states(state):
     return next_states
 
 def solve_missionaries_cannibals():
-    """
-    Giải bài toán Missionaries and Cannibals.
-    :return: Danh sách các trạng thái từ trạng thái đầu đến trạng thái đích.
-    """
-    initial_state = State(3, 3, 1)  # Trạng thái ban đầu: tất cả ở trên 1 bờ 
-    goal_state = State(0, 0, 0)     # Trạng thái đích: tất cả ở bờ bên kia 
+    
+    # return: Danh sách các trạng thái từ trạng thái đầu đến trạng thái đích.
+    
+    initial_state = State(0, 0, 0)  # Trạng thái ban đầu: tất cả ở trên 1 bờ 
+    goal_state = State(3, 3, 1)     # Trạng thái đích: tất cả ở bờ bên kia 
 
     queue = deque([(initial_state, [])])  # Hàng đợi BFS
     visited = {initial_state}            # Bộ lưu các trạng thái đã duyệt

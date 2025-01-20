@@ -13,6 +13,7 @@ def create_test_graph():
     # Thêm các cạnh từ đồ thị
     g.add_edge('START', 'd', 3)
     g.add_edge('START', 'p', 1)
+    g.add_edge('START', 'e', 9)
     g.add_edge('p', 'q', 1)
     g.add_edge('p', 'h', 4)
     g.add_edge('q', 'r', 3)
@@ -23,7 +24,7 @@ def create_test_graph():
     g.add_edge('d', 'e', 2)
     g.add_edge('b', 'a', 2)
     g.add_edge('a', 'c', 2)
-    g.add_edge('c', 'f', 5)
+    g.add_edge('f', 'c', 5)
     g.add_edge('e', 'r', 9)
     g.add_edge('r', 'f', 5)
     g.add_edge('f', 'GOAL', 5)
